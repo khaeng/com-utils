@@ -18,3 +18,15 @@ To install the library add:
    }
    ```  
 
+
+
+To view log with make tag:
+ ```
+ https://jitpack.io/com/github/{Git-Username}/{Git-Repository}/{Tag or Commit-no or master-SNAPSHOT}/build.log
+ https://jitpack.io/com/github/khaeng/com-utils/1.0/build.log
+ ```
+
+You can see build files to hear:
+ ```
+ https://jitpack.io/com/github/khaeng/com-utils/1.0/
+ ```
