@@ -11,6 +11,10 @@
 //	}
 //}
 
+// 버전이 6.7에서 사용됐었음.
+// bootJar { enabled = false}
+// jar {enabled = true}
+
 apply plugin: 'java'
 apply plugin: 'maven'
 // apply plugin: 'maven-publish'
