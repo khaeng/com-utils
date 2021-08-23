@@ -8,4 +8,11 @@ public class Const {
 
 	public static final String DEF_DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
+	public static final String DEF_FILE_TEMP_UPLOAD_KEY = "file.upload.temp.path";
+	public static final String DEF_FILE_TEMP_EXT = "tmp";
+
+	public static final String ENV_AWS_S3_BUCKET     = "HDRIVE_S3_BUCKET";
+	public static final String ENV_AWS_S3_SECRET_KEY = "HDRIVE_S3_SECRET_KEY";
+	public static final String ENV_AWS_S3_ACCESS_KEY = "HDRIVE_S3_ACCESS_KEY";
+
 }

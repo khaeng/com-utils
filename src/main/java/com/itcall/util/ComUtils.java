@@ -138,4 +138,7 @@ public class ComUtils {
 		
 	}
 
+	public static String getProperty(String key) {
+		return context.getEnvironment().getProperty(key, System.getProperty(key));
+	}
 }

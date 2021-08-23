@@ -98,6 +98,10 @@ dependencies {
 	// }
 	// spring-data-redis Lettuce를 사용할때...
 	compile ('org.springframework.boot:spring-boot-starter-data-redis:2.3.0.RELEASE')
+	
+	// AWS S3
+	implementation 'com.amazonaws:aws-java-sdk-s3:1.12.52'
+
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
