@@ -20,13 +20,16 @@ To install the library add:
 
 
 
-To view log with make tag:
+To view log when you compile your project using import this tag:
  ```
  https://jitpack.io/com/github/{Git-Username}/{Git-Repository}/{Tag or Commit-no or master-SNAPSHOT}/build.log
  https://jitpack.io/com/github/khaeng/com-utils/1.0/build.log
  ```
 
-You can see build files to hear:
+You can see build log-file and results to here:
  ```
  https://jitpack.io/com/github/khaeng/com-utils/1.0/
  ```
+
+Because of Jitpack supported limitation that you can compile with gradle 5.6.x or 6.3 when you using spring-boot library.
+
