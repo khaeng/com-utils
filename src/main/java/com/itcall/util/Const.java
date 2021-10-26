@@ -15,4 +15,7 @@ public class Const {
 	public static final String ENV_AWS_S3_SECRET_KEY = "HDRIVE_S3_SECRET_KEY";
 	public static final String ENV_AWS_S3_ACCESS_KEY = "HDRIVE_S3_ACCESS_KEY";
 
+	public static final String ENV_SERVER_APP_NAME_KEY = "server.app.name";
+	public static final String ENV_SERVER_APP_NO_KEY = "server.app.names.no";
+
 }

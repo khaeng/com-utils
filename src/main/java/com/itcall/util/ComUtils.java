@@ -139,6 +139,29 @@ public class ComUtils {
 	}
 
 	public static String getProperty(String key) {
-		return context.getEnvironment().getProperty(key, System.getProperty(key));
+		return getProperty(key, null);
 	}
+	public static String getProperty(String key, String defaultValue) {
+		String result = context.getEnvironment().getProperty(key, System.getProperty(key, System.getenv(key)));
+		if (StringUtils.isEmpty(result))
+			result = defaultValue;
+		return result;
+	}
+
+	/**************************************************************************************
+	 * Get All Exception Message from All Throwables...
+	 * @param throwable
+	 * @return
+	 **************************************************************************************/
+	public static String getErrMsg(Throwable t) {return getErrMsg(t,new StringBuilder(), 0).toString();}
+	private static StringBuilder getErrMsg(Throwable t, StringBuilder sb, int depth) {
+		if(t!=null) {
+			sb.append("[").append(depth).append("]:").append(t.getClass().getName()).append(": ").append(t.getMessage());
+			if(t.getCause()!=null)
+				getErrMsg(t.getCause(), sb.append("\n"), depth+1);
+		}
+		return sb;
+	}
+
+
 }
