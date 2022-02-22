@@ -596,6 +596,24 @@ public class ComUtils {
 		return saveFilePath;
 	}
 
+	/**
+	 * Bytes to HexString
+	 * @param buf
+	 * @return
+	 */
+	public static String getHexString(byte[] buf) {
+		return new java.math.BigInteger(buf).toString(16);
+	}
+
+	/**
+	 * HexString to Bytes
+	 * @param hexString
+	 * @return
+	 */
+	public static byte[] getBytesFromHexString(String hexString) {
+		return new java.math.BigInteger(hexString, 16).toByteArray();
+	}
+
 	public static RestTemplate restTemplate(final int maxTotal, final int defaultMaxPerRoute, final int connectTimeout,
 			final int readTimeout, final String userAgent) {
 		final Registry<ConnectionSocketFactory> schemeRegistry = RegistryBuilder.<ConnectionSocketFactory>create()
