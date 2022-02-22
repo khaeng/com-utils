@@ -19,6 +19,7 @@ public class Const {
 
 	public static final String ENV_SERVER_APP_NAME_KEY = "server.app.name";
 	public static final String ENV_SERVER_APP_NO_KEY = "server.app.names.no";
+	public static final int DEFAULT_REDIS_PORT = 6379;
 
 	public static String ENV_PROFILE = "prod";
 	public static boolean envIsDev() {
